@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в магазин Няма-нямы</h1>
+        <p>Сладости наши, вкусные в Рашэ</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="shop.html">Каталог</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="cart.html">🛒 <span id="count-cart">0</span></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- <h2>Наши товары:</h2> -->
+        <div class="products">
+            <div class="product" onclick="openModal(1)">
+                <img class="picture" src="images/01.jpg" alt="">
+                <!-- <div class="picture"></div> -->
+                <h3>Ярче</h3>
+                <p>Цена: 30 руб.</p>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5"> 
+                    <label class="gray-star" for="star5"></label>
+                    <input type="radio" id="star4" name="rating" value="4"> 
+                    <label class="gold-star" for="star4"></label>
+                    <input type="radio" id="star3" name="rating" value="3"> 
+                    <label class="gold-star" for="star3"></label>
+                    <input type="radio" id="star2" name="rating" value="2"> 
+                    <label class="gold-star" for="star2"></label>
+                    <input type="radio" id="star1" name="rating" value="1"> 
+                    <label class="gold-star" for="star1"></label>
+                </div>
+                <a class="button" onclick="openModal(1)">Купить</a>
+            </div>
+            <div class="product" onclick="openModal(2)">
+                <img class="picture" src="images/02.jpg" alt="">
+                <!-- <div class="picture"></div> -->
+                <h3>Лёвушка</h3>
+                <p>Цена: 80 руб.</p>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5"> 
+                    <label class="gold-star" for="star5"></label>
+                    <input type="radio" id="star4" name="rating" value="4"> 
+                    <label class="gold-star" for="star4"></label>
+                    <input type="radio" id="star3" name="rating" value="3"> 
+                    <label class="gold-star" for="star3"></label>
+                    <input type="radio" id="star2" name="rating" value="2"> 
+                    <label class="gold-star" for="star2"></label>
+                    <input type="radio" id="star1" name="rating" value="1"> 
+                    <label class="gold-star" for="star1"></label>
+                </div>
+                <a class="button" onclick="openModal(2)">Купить</a>
+            </div>
+            <div class="product" onclick="openModal(3)">
+                <img class="picture" src="images/03.jpg" alt="">
+                <!-- <div class="picture"></div> -->
+                <h3>Кум</h3>
+                <p>Цена: 40 руб.</p>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5"> 
+                    <label class="gray-star" for="star5"></label>
+                    <input type="radio" id="star4" name="rating" value="4"> 
+                    <label class="gray-star" for="star4"></label>
+                    <input type="radio" id="star3" name="rating" value="3"> 
+                    <label class="gray-star" for="star3"></label>
+                    <input type="radio" id="star2" name="rating" value="2"> 
+                    <label class="gold-star" for="star2"></label>
+                    <input type="radio" id="star1" name="rating" value="1"> 
+                    <label class="gold-star" for="star1"></label>
+                </div>
+                <a class="button" onclick="openModal(3)">Купить</a>
+            </div>
+            <div class="product" onclick="openModal(4)">
+                <img class="picture" src="images/04.jpg" alt="">
+                <!-- <div class="picture"></div> -->
+                <h3>Конфета</h3>
+                <p>Цена: 30 руб.</p>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5"> 
+                    <label class="gray-star" for="star5"></label>
+                    <input type="radio" id="star4" name="rating" value="4"> 
+                    <label class="gray-star" for="star4"></label>
+                    <input type="radio" id="star3" name="rating" value="3"> 
+                    <label class="gold-star" for="star3"></label>
+                    <input type="radio" id="star2" name="rating" value="2"> 
+                    <label class="gold-star" for="star2"></label>
+                    <input type="radio" id="star1" name="rating" value="1"> 
+                    <label class="gold-star" for="star1"></label>
+                </div>
+                <a class="button" onclick="openModal(4)">Купить</a>
+            </div>
+            <div class="product" onclick="openModal(5)">
+                <img class="picture" src="images/05.jpg" alt="">
+                <!-- <div class="picture"></div> -->
+                <h3>Евгеша</h3>
+                <p>Цена: 80 руб.</p>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5"> 
+                    <label class="gray-star" for="star5"></label>
+                    <input type="radio" id="star4" name="rating" value="4"> 
+                    <label class="gray-star"for="star4"></label>
+                    <input type="radio" id="star3" name="rating" value="3"> 
+                    <label class="gold-star" for="star3"></label>
+                    <input type="radio" id="star2" name="rating" value="2"> 
+                    <label class="gold-star" for="star2"></label>
+                    <input type="radio" id="star1" name="rating" value="1"> 
+                    <label class="gold-star" for="star1"></label>
+                </div>
+                <a class="button" onclick="openModal(5)">Купить</a>
+            </div>
+            <div class="product" onclick="openModal(6)">
+                <img class="picture" src="images/06.jpg" alt="">
+                <!-- <div class="picture"></div> -->
+                <h3>Фруктовый сад</h3>
+                <p>Цена: 40 руб.</p>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5"> 
+                    <label class="gold-star" for="star5"></label>
+                    <input type="radio" id="star4" name="rating" value="4"> 
+                    <label class="gold-star" for="star4"></label>
+                    <input type="radio" id="star3" name="rating" value="3"> 
+                    <label class="gold-star" for="star3"></label>
+                    <input type="radio" id="star2" name="rating" value="2"> 
+                    <label class="gold-star" for="star2"></label>
+                    <input type="radio" id="star1" name="rating" value="1"> 
+                    <label class="gold-star" for="star1"></label>
+                </div>
+                <a class="button" onclick="openModal(6)">Купить</a>
+            </div>
+        </div>
+    </div>
+    <!-- Всплывающие Карточки товаров -->
+     <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(1)">&times;</span>
+            <h3>Фруктовый сад</h3>
+            <img src="images/01.jpg" alt="">
+            <p>Цена: 40₽ шт</p>
+            <p>Описание: Это лёгкое освежающее лакомство 
+                с яркими нотками цитруса.</p>
+            <div class="counter">
+                <button class="counter-btn" onclick="minusProduct(1)">-</button>
+                <span id="count-product1">1</span>
+                <button class="counter-btn" onclick="plusProduct(1)">+</button>
+            </div>
+            <button class="add-cart-btn" onclick="addToCart(1)">В корзину</button>               
+        </div>
+     </div>
+     <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(2)">&times;</span>
+            <h3>Фруктовый сад</h3>
+            <img src="images/02.jpg" alt="">
+            <p>Цена: 40₽ шт</p>
+            <p>Описание: Это лёгкое освежающее лакомство 
+                с яркими нотками цитруса.</p>
+            <div class="counter">
+                <button class="counter-btn" onclick="minusProduct(2)">-</button>
+                <span id="count-product2">1</span>
+                <button class="counter-btn" onclick="plusProduct(2)">+</button>
+            </div>
+            <button class="add-cart-btn" onclick="addToCart(2)">В корзину</button>               
+        </div>
+     </div>
+     <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(3)">&times;</span>
+            <h3>Фруктовый сад</h3>
+            <img src="images/03.jpg" alt="">
+            <p>Цена: 40₽ шт</p>
+            <p>Описание: Это лёгкое освежающее лакомство 
+                с яркими нотками цитруса.</p>
+            <div class="counter">
+                <button class="counter-btn" onclick="minusProduct(3)">-</button>
+                <span id="count-product3">1</span>
+                <button class="counter-btn" onclick="plusProduct(3)">+</button>
+            </div>
+            <button class="add-cart-btn" onclick="addToCart(3)">В корзину</button>               
+        </div>
+     </div>
+     <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(4)">&times;</span>
+            <h3>Фруктовый сад</h3>
+            <img src="images/04.jpg" alt="">
+            <p>Цена: 40₽ шт</p>
+            <p>Описание: Это лёгкое освежающее лакомство 
+                с яркими нотками цитруса.</p>
+            <div class="counter">
+                <button class="counter-btn" onclick="minusProduct(4)">-</button>
+                <span id="count-product4">1</span>
+                <button class="counter-btn" onclick="plusProduct(4)">+</button>
+            </div>
+            <button class="add-cart-btn" onclick="addToCart(4)">В корзину</button>               
+        </div>
+     </div>
+     <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(5)">&times;</span>
+            <h3>Фруктовый сад</h3>
+            <img src="images/05.jpg" alt="">
+            <p>Цена: 40₽ шт</p>
+            <p>Описание: Это лёгкое освежающее лакомство 
+                с яркими нотками цитруса.</p>
+            <div class="counter">
+                <button class="counter-btn" onclick="minusProduct(5)">-</button>
+                <span id="count-product5">1</span>
+                <button class="counter-btn" onclick="plusProduct(5)">+</button>
+            </div>
+            <button class="add-cart-btn" onclick="addToCart(5)">В корзину</button>               
+        </div>
+     </div>
+     <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal(6)">&times;</span>
+            <h3>Фруктовый сад</h3>
+            <img src="images/06.jpg" alt="">
+            <p>Цена: 40₽ шт</p>
+            <p>Описание: Это лёгкое освежающее лакомство 
+                с яркими нотками цитруса.</p>
+            <div class="counter">
+                <button class="counter-btn" onclick="minusProduct(6)">-</button>
+                <span id="count-product6">1</span>
+                <button class="counter-btn" onclick="plusProduct(6)">+</button>
+            </div>
+            <button class="add-cart-btn" onclick="addToCart(6)">В корзину</button>               
+        </div>
+     </div>
+    <div class="social-links">
+        <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-vk"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fas fa-phone"></i></a>
+    </div>
+    <footer>
+        <p>© 2024 Магазин леденцов. Все права защищены.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
